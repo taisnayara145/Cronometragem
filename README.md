@@ -20,7 +20,7 @@ Software para cronometrar o processo de montagem de equipamentos controlado por 
 
 - Tela Principal
 
-![alt tag](https://github.com/taisnayara145/Cronometragem/blob/master/Imagens/Diagrama%20de%20Atividade.PNG)
+![alt tag](https://github.com/taisnayara145/Cronometragem/blob/master/Imagens/Tela%20principal.PNG)
 
 - Configuração de posto, operador e modelo.
 
