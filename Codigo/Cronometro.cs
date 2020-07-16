@@ -17,7 +17,7 @@ namespace Cronometro.View
         private SeaIOClassic sio = new SeaIOClassic();
         private SeaIOClassic.Error response = 0;
         private int vezParcial = 0, length = 1, canal;
-        private String linha, posto, modelo, operador;
+        private String  posto, modelo, operador;
         private byte[] pBuffer = { 0 };
         private ushort card;
         private List<TimerLista> listaTimer;
@@ -58,17 +58,15 @@ namespace Cronometro.View
             //recuperar informações do arquivo ini
             canal = int.Parse(ini.readString("Config", "Canal", ""));
             card = ushort.Parse(ini.readString("Config", "Card", ""));
+			posto = ini.readString("Config", "Posto", "");
             operador = ini.readString("Config", "Operador", "");
-            linha = ini.readString("Config", "Linha", "");
-            posto = ini.readString("Config", "Posto", "");
             modelo = ini.readString("Config", "Modelo", "");
 
             // preencher labels com ultimas configurações
             lbCanal.Text = "Canal:" + canal;
             lbCard.Text = "Card:" + card;
+			lbPosto.Text = "Posto:" + posto;
             lbOperador.Text = "Operador:" + operador;
-            lbLinha.Text = "Linha:" + linha;
-            lbPosto.Text = "Posto:" + posto;
             lbModelo.Text = "Modelo:" + modelo;
         }
         private void abrirConexao()
@@ -120,7 +118,7 @@ namespace Cronometro.View
                     vezParcial++;
                     try
                     {
-                        Timer1 timer = new Timer1(double.Parse(lblTempo.Text), dates.ToString("yyyy-MM-dd"), dates.ToString("HH:mm:ss"), linha, posto, modelo, operador);
+                        Timer1 timer = new Timer1(double.Parse(lblTempo.Text), dates.ToString("yyyy-MM-dd"), dates.ToString("HH:mm:ss"), posto, modelo, operador);
                         timerDB.salvar(timer);
                     }
                     catch (Exception c)
