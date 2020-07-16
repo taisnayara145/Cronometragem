@@ -38,10 +38,8 @@ namespace Cronometro.View
         private void AbrirConexaoSQL()
         {
             //string de conexão com o banco de dados
-           // mConn = new MySqlConnection("Persist Security Info=False; server=192.168.10.121;database=timer;uid=adminer;password=Sonybrasil2022;charset=utf8;pooling=false");
-            mConn = new MySqlConnection("Persist Security Info=False; server=192.168.1.98;database=timer;uid=adminer;password=Sonybrasil2022;charset=utf8;pooling=false");
-            //mConn = new MySqlConnection("Persist Security Info=False; server=localhost;database=timer;uid=root;password=Sonybrasil2022");
-
+            mConn = new MySqlConnection("Persist Security Info=False; server=*********;database=timer;uid=********;password=**********;charset=utf8;pooling=false");
+          
             try
             {
                 //abre a conexao
