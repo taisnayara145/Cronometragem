@@ -24,7 +24,7 @@ Software para cronometrar o processo de montagem de equipamentos controlado por 
 
 - Configuração de posto, operador e modelo.
 
-![alt tag](https://github.com/taisnayara145/Cronometragem/blob/master/Imagens/Tela%20principal.PNG)
+![alt tag](https://github.com/taisnayara145/Cronometragem/blob/master/Imagens/Configura%C3%A7%C3%B5es.PNG)
 
 - Cronometrar tempo de montagem controlado pro botão externo conectado ao computador
 
